@@ -17,11 +17,6 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "isolatedModules": true,
-    "types": [
-      "node",
-      "whois"
-    ] // Add this line to include the custom type declaration
-    ,
     "noEmit": true,
     "incremental": true
   },
@@ -29,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "types/**/*.d.ts" // Ensure TypeScript includes the custom types
+    "types/**/*.d.ts" // Ensures all .d.ts files inside types and subdirectories are included
   ],
   "exclude": [
     "node_modules"
